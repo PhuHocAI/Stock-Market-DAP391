@@ -60,10 +60,11 @@ st.markdown("""
         z-index: 1000;
         width: 350px;
         height: 500px;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
         display: none;
+        border: 1px solid rgba(102, 126, 234, 0.1);
     }
     
     .chatbot-toggle {
@@ -74,12 +75,19 @@ st.markdown("""
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        background: #1f77b4;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
         border: none;
         cursor: pointer;
         font-size: 24px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        transition: all 0.3s ease;
+    }
+    
+    .chatbot-toggle:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+        background: linear-gradient(135deg, #7c8ff0 0%, #8a5bb8 100%);
     }
 </style>
 """, unsafe_allow_html=True)
